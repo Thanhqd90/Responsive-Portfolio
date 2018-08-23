@@ -217,9 +217,18 @@ input[type=submit] {
 }
 
 /* Responsive Webpage Code */
-@media screen and (max-width: 980px) {
-  #masthead {
+@media screen and (max-width:980px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+      width: 100%;
+  }
+
+    #masthead {
     position: static;
+    width: 100%;
   }
   
   .main-section {
@@ -228,27 +237,64 @@ input[type=submit] {
     margin-top: -125px;
 }
 
+ .work {
+  width: 45%;
+}
 
-@media screen and (max-width: 768px) {
-  #masthead {
-    position: static;
-  }
-  
-  .main-section {
+ h3 {
+  font-size: 1.1rem;
+  padding: 4px;
+ }
+}
+
+@media screen and (max-width:768px) {
+
+  .container {
     width: 100%;
+    margin: auto;
+  }
+
+  .main-section {
+    width: 90%;
     font-size: .9rem;
     margin-top: -125px;
 }
 
+  #masthead {
+    position: static;
+  }
+
+  
+   .work h3 {
+    font-size: 1.1rem;
+    padding: 0px;
+   }
+
+   nav, a {
+   display: block;
+   }
+  }
 
 @media screen and (max-width: 640px) {
-  #masthead {
-    position: static;
-  }
+
   
-  .main-section {
+  .container {
     width: 100%;
+    margin: auto;
+  }
+
+  .main-section {
+    width: 90%;
     font-size: .9rem;
     margin-top: -125px;
 }
+
+  #masthead {
+    position: static;
+  }
+
+  .work h3 {
+    font-size: 1.1rem;    
+    padding: 0px;
+   }
 }
